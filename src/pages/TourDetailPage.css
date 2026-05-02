@@ -1,0 +1,198 @@
+.tour-detail-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #667eea;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #764ba2;
+}
+
+.detail-container {
+  margin-bottom: 3rem;
+}
+
+.detail-image {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.detail-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.detail-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2d3436;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.detail-meta span {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.detail-meta .price {
+  font-size: 1.5rem;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.detail-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+}
+
+.main-content section {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.main-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2d3436;
+}
+
+.main-content p {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.highlights ul,
+.included ul {
+  list-style: none;
+  padding: 0;
+}
+
+.highlights li,
+.included li {
+  padding: 0.5rem 0;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.itinerary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.itinerary-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.day-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.activity {
+  padding: 0.5rem 0;
+  color: #555;
+}
+
+.booking-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.booking-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #2d3436;
+}
+
+.booking-info {
+  margin-bottom: 1.5rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.info-row .price {
+  font-weight: bold;
+  color: #667eea;
+}
+
+.btn-block {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.error-page {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.error-page h2 {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .detail-content {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .detail-image img {
+    height: 250px;
+  }
+
+  .booking-sidebar {
+    position: static;
+  }
+
+  .detail-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

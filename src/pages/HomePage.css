@@ -1,0 +1,111 @@
+.home-page {
+  width: 100%;
+}
+
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+.featured-section {
+  margin-bottom: 4rem;
+}
+
+.featured-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2d3436;
+}
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.why-us {
+  margin-top: 4rem;
+  padding: 3rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.why-us h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2d3436;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  margin-bottom: 0.5rem;
+  color: #667eea;
+}
+
+.feature p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .tours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

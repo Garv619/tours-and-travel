@@ -1,0 +1,141 @@
+.booking-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+}
+
+.booking-form-section h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2d3436;
+}
+
+.booking-form-section h2 {
+  font-size: 1.3rem;
+  color: #667eea;
+  margin-bottom: 2rem;
+}
+
+.booking-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2d3436;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group input.error {
+  border-color: #e74c3c;
+}
+
+.error-msg {
+  display: block;
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.booking-summary {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.summary-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #2d3436;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.summary-item .value {
+  font-weight: 500;
+  text-align: right;
+}
+
+.summary-item.total {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+.summary-item.total .value {
+  color: #667eea;
+  font-size: 1.3rem;
+}
+
+.summary-card hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .booking-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-summary {
+    position: static;
+  }
+
+  .booking-form-section h1 {
+    font-size: 1.5rem;
+  }
+}
